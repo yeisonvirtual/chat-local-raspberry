@@ -1,0 +1,41 @@
+<title>Chat</title>
+    
+</head>
+
+<body>
+
+    <h1>Chat local</h1>
+
+    <a class="button" href="/chat?">Refrescar</a>
+    <a class="button" href="/clear?">Limpiar</a>
+
+    <table class="tabla-responsiva">
+
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Mensaje</th>
+                <th>Hora</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            %s
+
+        </tbody>
+        
+    </table>
+    
+    <form method="POST" action="/send?">
+        <input type="text" name="message" placeholder="Mensaje">
+        <button type="submit" class="button"> Enviar </button>
+    </form>
+
+    <footer>
+        <p>Copyright © Yeison Rojas. All rights reserved.</p>
+    </footer>
+  
+</body>
+</html>
